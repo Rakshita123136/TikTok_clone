@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "867768715935",
+    "project_id": "tiktok-new-ad110",
+    "storage_bucket": "tiktok-new-ad110.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867768715935:android:f2c8ff113672e2a13370aa",
+        "android_client_info": {
+          "package_name": "com.android.tiktok"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNzm7Qa9SZIjC309-RBO0Lz2fJL9el4qA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867768715935:android:86299948d1c155ae3370aa",
+        "android_client_info": {
+          "package_name": "com.example.tiktok"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNzm7Qa9SZIjC309-RBO0Lz2fJL9el4qA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
