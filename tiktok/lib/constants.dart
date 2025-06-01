@@ -6,14 +6,14 @@ import 'package:tiktok/Controller/auth_controller.dart';
 import 'package:tiktok/view/screens/video_screen.dart';
 import 'package:tiktok/view/screens/search_screen.dart';
 import 'package:tiktok/view/screens/add_video_screen.dart';
-
+import 'package:tiktok/View/screens/home_screen.dart';
 import 'package:tiktok/view/screens/profile_screen.dart';
 
 // PAGES LIST - ACTUAL SCREENS
 const pages = [
   ('VideoScreen'), // Home screen with videos
-  ('SearchScreen'), // Search screen
-  ('Add video'), // Upload video screen
+  ('Search Screen'), // Search screen
+  ('Add page video'), // Upload video screen
   ('Message screen'), // Messages screen
   ('ProfileScreen'), // User profile screen
 ];

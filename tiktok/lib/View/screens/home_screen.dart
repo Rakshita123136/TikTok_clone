@@ -1,25 +1,28 @@
+// ignore_for_file: duplicate_import
+
 import 'package:flutter/material.dart';
 import 'package:tiktok/View/widgets/custom_icon.dart';
 import 'package:tiktok/constants.dart';
+import 'package:tiktok/constants.dart';
+import 'package:tiktok/View/widgets/custom_icon.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int pageIdx = 0; // Track selected tab index
+  int pageIdx = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Bottom navigation bar to switch between different sections
       bottomNavigationBar: BottomNavigationBar(
         onTap: (idx) {
           setState(() {
-            pageIdx = idx; // Update selected tab
+            pageIdx = idx;
           });
         },
         type: BottomNavigationBarType.fixed,
@@ -37,12 +40,12 @@ class _HomeScreenState extends State<HomeScreen> {
             label: 'Search',
           ),
           BottomNavigationBarItem(
-            icon: CustomIcon(), // Custom upload button
-            label: ' ',
+            icon: CustomIcon(),
+            label: '',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.message, size: 30),
-            label: 'Message',
+            label: 'Messages',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person, size: 30),
@@ -50,9 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-
-      // Display different pages based on selected tab
-      body: pages[pageIdx], 
+      body: pages[pageIdx],
     );
   }
 }
